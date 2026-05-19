@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.p{
+    text-align: center;
+    color: #000000;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.fontdesq{
+    text-align: center;
+    color: #07044f;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+main{
+    margin-top: 400px;
+}
+
+/*CSS DO MENU PRINCIPAL*/
+
+
+.menu_top {
+    width: 100%;
+    height: 170px;
+    border-bottom: 3px solid #060644;
+    border-top: 10px solid #060644;
+    background-color: #f1f2ec;
+}
+
+.top_esp {
+    width: 140px;
+    float: left;
+    padding: 10px;
+}
+
+.menu_down {
+    background: #cacaca;
+    height: 50px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.buttonbackg{
+    background-color: #4A4E51;
+}
+
+.clear {
+    clear: both;
+}
+
+.botao{
+    position: relative;
+    top: 19px;
+    border-right: solid 2.3px #aeaeae;
+    border-left: solid 2.3px #aeaeae; 
+    padding: 8px;
+}
+
+.botao:hover{
+    border-right: solid 2.5px #4a4a4a;
+    border-left: solid 2.5px #4a4a4a;
+}
+
+a{
+    color: #07044f;
+}
+a:hover{
+    color: #07044f;
+}
+
+
+
+/*menu*/
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item-pai {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #cacaca; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding: 10px 0;
+    border: 1px solid #aeaeae;
+}
+
+.sub-menu a {
+    color: #07044f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.sub-menu a:hover {
+    background-color: #dcdcdc;
+}
+
+.item-pai:hover .sub-menu {
+    display: block;
+}
+/* ÁREA DOS CARDS */
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 400px;
+    padding: 30px;
+}
+
+/* CARD */
+
+.cards{
+    width: 350px;
+    background-color: #7d7d7d;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgb(45, 3, 255);
+    text-align: center;
+}
+
+.cards img{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* GALERIA */
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria img{
+    width: 100%;
+}
+body{
+     background:
+    radial-gradient(circle at top, #07044f 0%, #000000 60%);
+}
+</style>
+  <header>
+    <div class="menu_top">
+      <img src="IMG/Banner.jpg" width="100%">
+      <div class="menu_down">
+        <nav>
+          <div class="menu-container">
+            <div class="item-pai">
+              <a href="MasculinoCSS.html" class="botao">MASCULINO</a>
+              <div class="sub-menu">
+                <a href="#">CAMISETAS</a>
+                <a href="#">SHORTS</a>
+                <a href="#">CALÇADOS</a>
+                <a href="#">ACESSÓRIOS</a>
+              </div>
+            </div>
+            <div class="item-pai">
+              <a href="FemininoCSS.html" class="botao">FEMININO</a>
+              <div class="sub-menu">
+                <a href="#">CAMISETAS</a>
+                <a href="#">CALÇAS</a>
+                <a href="#">SHORTS</a>
+                <a href="#">ACESSÓRIOS</a>
+              </div>
+            </div>
+            <div><a href="EventosCSS.html" class="botao">EVENTOS</a></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="cards-container">
+
+    <!-- CARD 1 -->
+
+    <section class="cards">
+
+        <h1 class="fontdesq">YLIM RUN 2026</h1>
+
+        <p>
+            A corrida oficial da YLIM está chegando.
+            Prepare-se para viver uma experiência única.
+        </p>
+        <img src="img/Kawasaki_Ninja_H2.jpg">
+        <img src="img/ninja300.jpg">
+
+    </section>
+
+
+    <!-- CARD 2 -->
+
+    <section class="cards">
+
+        <h1 class="fontdesq">Marcas de foco</h1>
+
+        <p>BMW</p>
+        <p>Kawasaki</p>
+
+        <img src="">
+">      <img src="">
+    </section>
+
+
+    <!-- CARD 3 -->
+
+    <section class="cards">
+
+        <h1 class="fontdesq">Lançamentos de 2026/27</h1>
+
+        <div class="galeria">
+
+            <img src="img/bmw-s-1000-rr-branca.png">
+            <img src="img/BMW.jpg">
+        </div>
+
+    </section>
+
+
+    <!-- CARD 4 -->
+
+    <section class="cards">
+
+        <h1 class="fontdesq">Modificaçoes</h1>
+
+        <p>
+         .
+        </p>
+
+        <img src="">
+
+    </section>
+
+
+    <!-- CARD 5 -->
+
+    <section class="cards">
+
+        <h1 class="fontdesq">Sobre as Marcas</h1>
+
+        <p>
+            
+        </p>
+
+        <img src="">
+
+    </section>
+
+</div>
+</body>
+</html>

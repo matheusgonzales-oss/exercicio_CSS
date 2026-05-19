@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Parallax</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+        body, html{
+            margin: 0;/*margem*/
+            padding: 0;/*prepreenchimento*/
+            height: 100%; /*altura*/          
+        }
+        .cabe{/*onde fica o menu */
+            width: 100%;/*largura*/
+            height: 100px;
+            background-color: #e3e8dd;
+        }
+        input{
+            width: 20%;
+            height: 30px;
+            font-size: 18px;/*tamanho da fote*/
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            border: solid rgb(1, 1, 1) 1.5px;
+            border-radius: 10px;
+            background-image: url(img/64673.png);/*define uma imagem como fundo de um elemento.*/
+            background-size: 10%;
+            background-repeat: no-repeat;
+            background-position:  top 5px right 10px;
+            margin-top: 30px;
+            margin-right: 20px;
+            float: right;/*o elemento sai do fluxo normal e “flutua” para um lado.*/
+        }
+        .logo{
+            float: left;
+            text-indent: 20px;/*criar um recuo na primeira linha de um texto (parágrafo).*/
+            width: 20%;
+        }
+        .cabe ul{
+            float: left;
+            width: 50%;
+            margin: 0px 0px 0px 20px;
+            line-height: 100px;/*altura da linha*/
+            text-align: center;
+        }
+        .cabe ul li{
+            text-decoration: none;/*decoração de texto*/
+            display: inline;/*define que o elemento será exibido como inline (em linha).*/
+            padding: 20px;
+            color:  rgb(13, 66, 13); 
+            font-family: 'Finger Paint', cursive;
+            font-size: 1.5em;/*tamanho da fonte*/
+            cursor: pointer;
+        }
+        .cabe ul li:hover{/*quando o mouse está em cima*/
+            color:  rgb(55, 120, 31); 
+        }
+
+
+
+        
+        .box1, .box2, .box3, .box4{
+            position: relative;
+            height: 100%;
+            opacity: 0.7;/*transparência de um elemento.*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;        
+        } 
+        .box1{
+            background-image: url(img/bAP.gif);
+        }
+        .box2{
+            background-image: url(img/foto02.jpg);
+        }
+        .box3{
+            background-image: url(img/foto03.jpg);
+        }
+        .box4{
+            background-image: url(img/foto04.jpg);
+        }
+        
+        .cont-img{
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            text-align: center;/*centralizar o texto horizontalmente*/
+        }
+        .cont-img span.titulo{
+           background-color: rgb(13, 66, 13); 
+           color: #ffffff;   
+           padding: 20px;
+           font-size: 20px;
+           letter-spacing: 5px;/*espaçamento entre letras*/    
+        }
+
+        .conteudo{
+            background-color: #e3e8dd;
+            color: rgb(13, 66, 13); 
+            text-align: justify;/*alinhado dos dois lados*/
+            padding: 50px 100px 40px 100px;
+            background-image: url(Imagem/mold01.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2{
+            text-transform: uppercase;/*faz com que todo o texto fique em letras maiúsculas.*/
+            color: rgb(13, 66, 13); 
+            text-align: center;
+        }
+
+        .roda{
+            margin-top: -20px;
+            height: 330px;
+            background-color: #e3e8dd;
+        }
+        .roda .down_up{
+            text-align: center;
+            color:  rgb(13, 66, 13); 
+            font-family: 'Finger Paint', cursive;/*usada para definir a fonte (tipo de letra)*/
+            font-size: 4em;
+        }
+        .roda .down_meio{
+            text-align: center;
+            color:  rgb(13, 66, 13); 
+            font-family: 'Finger Paint', cursive;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .roda .down_down{
+            text-align: center;
+        }
+        .roda .down_down img{
+            width: 40px;
+            border-radius: 25px;
+            border: 4px rgb(13, 66, 13) dotted;
+            cursor: pointer;/*muda o formato do cursor (mouse) quando passa sobre um elemento.*/
+            margin: 20px;
+            padding: 5px;
+        }
+        </style>
+
+</head>
+<body>
+
+    <div class="cabe">
+        <div class="logo">
+            <img src="img/logo_natu (1).png">
+        </div>
+        <div>
+            <ul>
+                <li>HOME</li>
+                <li>SERVIÇOS</li>
+                <li>PRODUTOS</li>
+                <li>SOBRE</li>
+            </ul>
+        </div>
+        <input class="pesq" type="text" name="pesq" placeholder="Pesquisar">
+    </div>
+
+    <div class="box1">
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É REAL</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+    </div>
+    <div class="box2">
+            <div class="cont-img">
+                <span class="titulo">NATUREZA É VIVA</span>
+            </div>
+    </div>
+    <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+    </div>
+    <div class="box3">
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É NOSSA</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+    </div>
+    <div class="box4">
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É VIDA</span>
+        </div>
+    </div>
+
+    <div class="roda">
+        <br><br><br>
+        <div class="down_up">NATUREZA</div>
+        <div class="down_meio">Lorem ipsum dolor sit amet consectetur adipisicing elit
+            <br>#NATUREZA</div>
+        <div class="down_down">
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/face_logo_01.png"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whats_logo_01.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+        </div>
+    </div>
+
+</body>
+</html>

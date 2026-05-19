@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YLIM Eventos</title>
+
+  <style>
+    *
+    {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+     td {
+            text-align: center;
+        }
+
+        .tabela {
+            justify-self: center;
+        }
+        *{
+                margin: 0 auto;
+                padding: 0;
+            }
+        .menu{
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            height: 40px;
+            margin-top: -5px;
+        }
+        .menu ul{
+            padding: 0;
+            max-width: 500px;
+            text-align: center;
+        }
+        .menu ul li{          
+            background-color: rgb(9, 9, 10);
+            color: white;
+            float: left;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+        .menu ul li:hover{
+            background-color:blue; 
+        }
+        
+        .menu ul ul{
+            display: none;
+        }
+        .menu ul li:hover > ul{
+            display: block;
+        }
+        
+        .menu ul ul ul{
+            margin-left: 102px;
+            position: absolute;
+            top: 0px;
+        }
+        .menu ul ul li:hover{
+            background-color:rgb(3, 3, 166); 
+        }
+        .menu ul ul ul li:hover{
+            background-color:rgb(2, 2, 88); 
+        }
+
+    body{
+      background:#ffffff;
+      color:#111;
+      text-align:center;
+    }
+
+    header{
+      background:#000;
+      padding:20px;
+      color:white;
+    }
+
+    .logo{
+      font-size:35px;
+      font-weight:bold;
+    }
+
+    .logo span{
+      color:#0066ff;
+    }
+
+    nav{
+      margin-top:15px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 10px;
+    }
+
+    .hero{
+      height:500px;
+      background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url(img/bannerdjeci.png)
+      center/cover no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:60px;
+    }
+
+    .hero span{
+      color:#0066ff;
+    }
+
+    .hero p{
+      margin-top:200px;
+      font-size:18px;
+    }
+
+    button{
+      margin-top:25px;
+      padding:12px 25px;
+      border:none;
+      background:#0066ff;
+      color:white;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    .section{
+      padding:60px 20px;
+    }
+
+    .section h2{
+      margin-bottom:40px;
+      font-size:40px;
+    }
+
+    .events{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:white;
+      width:320px;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 0 10px rgb(21, 0, 255);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .event-category{
+      color:#0066ff;
+      font-size:14px;
+      font-weight:bold;
+    }
+
+    .event-title{
+      font-size:24px;
+      margin:15px 0;
+    }
+
+    .event-info{
+      margin:10px 0;
+      color:#555;
+    }
+
+    footer{
+      background:#000;
+      color:white;
+      padding:40px 20px;
+      margin-top:50px;
+    }
+
+    footer a{
+      color:#0066ff;
+      text-decoration:none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <header>
+        <img src="IMG/Banner.jpg" width="100%">
+        <nav class="menu">
+            <ul>
+                <li>index
+                    <ul>
+                        <li>avocado</li>
+                        <li>nacional</li>
+                        <li>importado 
+                            <ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Ofertas
+                    <ul>
+                        <li>avocado</li>
+                        <li>nacional</li>
+                        <li>importado 
+                            <ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Masculino
+                    <ul>
+                        <li>avocado</li>
+                        <li>nacional</li>
+                        <li>importado 
+                            <ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> Feminino
+                    <ul>
+                        <li>avocado</li>
+                        <li>nacional</li>
+                        <li>importado
+                            <ul>
+                                
+                                
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+        </nav>
+</header>
+
+  </header>
+  
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>
+        EVENTOS <br>
+        <span>YLIM</span>
+      </h1>
+
+      <p>
+        Viva experiências únicas com esporte, movimento
+        e superação ao lado da comunidade YLIM.
+      </p>
+
+      <button>
+        Ver Eventos
+      </button>
+
+    </div>
+
+  </section>
+
+  <section class="section">
+
+    <h2>Próximos Eventos</h2>
+
+    <div class="events">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <div class="event-category">
+            Corrida
+          </div>
+
+          <div class="event-title">
+            YLIM 5K Experience
+          </div>
+
+          <div class="event-info">
+             São Paulo
+          </div>
+
+          <div class="event-info">
+             20 Julho 2026
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <div class="event-category">
+            Treino
+          </div>
+
+          <div class="event-title">
+            Training Day
+          </div>
+
+          <div class="event-info">
+              Campinas
+          </div>
+
+          <div class="event-info">
+             05 Agosto 2026
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <div class="event-category">
+            Festival
+          </div>
+
+          <div class="event-title">
+            YLIM Movement Festival
+          </div>
+
+          <div class="event-info">
+             Rio de Janeiro
+          </div>
+
+          <div class="event-info">
+             18 Setembro 2026
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+ <footer>
+            <hr>
+            <table align="center">
+                <tr>
+                    <td>
+                        <div align="center">
+                            <h2>Nossa Localização</h2>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!4v1773057008077!6m8!1m7!1s1ctNOR966bcQFJHLkTFqWQ!2m2!1d-22.90085923989506!2d-49.62907296119952!3f76.89553804990139!4f0!5f0.7820865974627469"
+                            width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        <div align="center">
+                            <h2>Funcionamento</h2>
+                        </div>
+
+                        <table border="2">
+
+                            <thead>
+                                <tr>
+                                    <th><b>Domingo</b></th>
+                                    <th><b>Segunda</b></th>
+                                    <th><b>Terça</b></th>
+                                    <th><b>Quarta</b></th>
+                                    <th><b>Quinta</b></th>
+                                    <th><b>Sexta</b></th>
+                                    <th><b>Sábado</b></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fechado</td>
+                                    <td>09:00 - 18:00</td>
+                                    <td>09:00 - 18:00</td>
+                                    <td>09:00 - 18:00</td>
+                                    <td>09:00 - 18:00</td>
+                                    <td>09:00 - 18:00</td>
+                                    <td>09:00 - 15:00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="7">Possíveis alteraçãos em feriados, fiquem atentos no instagram...
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <br>
+                        <hr>
+                        <div align="center">
+                            <h2>Contatos</h2>
+                            <a href="https://www.instagram.com/tb_store02/"><button>Instagram</Button></a>
+                            <a href="mailto:thomaz.lopes@edu.senai.br"><button>E-mail</button> </a>
+                        </div>
+                    </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><img src="IMG/LogoWhite.jpeg" width="400" height="400"></td>
+                </tr>
+            </table>
+        </footer>
+        <br>
+        <table border="2">
+        </table>
+    </div>
+    <h2>YLIM Eventos</h2>
+
+    <p>
+      Sua vida em movimento.
+    </p>
+
+    <br>
+
+    <p>
+      Instagram:
+      <a href="#">
+        @ylim
+      </a>
+    </p>
+
+    <p>
+      Contato:
+      eventos@ylim.com
+    </p>
+    
+
+  </footer>
+
+</body>
+</html>
